@@ -21,7 +21,7 @@ interface Image {
 }
 
 const CDNURL =
-  "https://cngclmfnevtclmshlwfa.supabase.co/storage/v1/object/public/gallery-images/gallery/";
+  "https://efgdwcswampnvhpafcef.supabase.co/storage/v1/object/public/gallery-images/gallery/";
 
 export default function ImageSlider() {
   const carouselRef = useRef(null);

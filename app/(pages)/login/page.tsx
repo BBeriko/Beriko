@@ -35,7 +35,7 @@ export default function LoginPage() {
       <div className="py-32 flex justify-center items-center rounded-md shadow-md bg-primary-foreground">
         <form onSubmit={handleSubmit} className="flex flex-col gap-3">
           <Image
-            src="/logo.png"
+            src="https://utfs.io/f/KEu7z70yXtIh8k4eWbySeWkuAlRcKazbEojGsgDmyxPMd9n7"
             alt="Logo"
             width={250}
             height={250}

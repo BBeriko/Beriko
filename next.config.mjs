@@ -3,7 +3,7 @@ const nextConfig = {
   images: {
     domains: [
       // "images.unsplash.com",
-      "cngclmfnevtclmshlwfa.supabase.co",
+      "efgdwcswampnvhpafcef.supabase.co",
       "utfs.io"
     ],
   },
