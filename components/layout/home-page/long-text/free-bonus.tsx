@@ -8,7 +8,7 @@ export default function FreeBonus() {
               BESPLATNI bonus #1: pocinčana konstrukcija
             </h2>
             <p>
-              Kada naručite montažni objekt, dobit ćete i besplatno činčane
+              Kada naručite montažni objekt, dobit ćete i besplatno cinčane
               konstrukcije. Biti ćete zadovoljni jer nećete imati brige oko
               održavanja.
             </p>

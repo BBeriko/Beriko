@@ -15,7 +15,7 @@ export default function Warranty() {
           <p>
             Potreba za vaš dodatni prostor je jasna i neposredna. Zato nemojte
             čekati da bude vaša imovina na otvorenome nego odmah naručite
-            montažni objekt. Kvalitetan je. Bez rizika je. Promijenit ce vam
+            montažni objekt. Kvalitetan je. Bez rizika je. Promijenit će Vam
             život!
           </p>
           <p>
