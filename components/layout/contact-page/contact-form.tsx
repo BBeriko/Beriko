@@ -93,7 +93,7 @@ export default function ContactForm() {
                     <input
                       className="border-b border-newBlack py-2"
                       type="text"
-                      placeholder="Bernard"
+                      placeholder="Ime i prezime"
                       name="ime"
                       required
                     />
@@ -103,7 +103,7 @@ export default function ContactForm() {
                     <input
                       className="border-b border-newBlack py-2"
                       type="email"
-                      placeholder="beriko@beriko.com"
+                      placeholder="mail@mail.com"
                       name="email"
                       required
                     />
@@ -113,7 +113,7 @@ export default function ContactForm() {
                     <input
                       className="border-b border-newBlack py-2"
                       type="phone"
-                      placeholder="+385 98 64 62 60"
+                      placeholder="+385 99 999 999"
                       name="telefon"
                       required
                     />
@@ -125,7 +125,7 @@ export default function ContactForm() {
                     <input
                       className="border-b border-newBlack py-2"
                       type="text"
-                      placeholder="Koprivnica"
+                      placeholder="Grad"
                       name="grad"
                       required
                     />
@@ -135,7 +135,7 @@ export default function ContactForm() {
                     <input
                       className="border-b border-newBlack py-2"
                       type="text"
-                      placeholder="Trg kralja Zvonimira 12"
+                      placeholder="Ulica i broj"
                       name="ulica"
                       required
                     />
