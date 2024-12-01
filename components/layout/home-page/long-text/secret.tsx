@@ -26,10 +26,10 @@ export default function Secret() {
           </p>
           <Image
             className="w-[400px] h-[300px] mx-auto"
-            alt="hazzard"
-            src="https://utfs.io/f/KEu7z70yXtIhkn0SfKag3ZgeQMExhbDftVPAJoSC4YGFTdz7"
-            width={1920}
-            height={300}
+            alt="secret"
+            src="https://utfs.io/f/KEu7z70yXtIhet1HJwkbMstZeRInBA1hYyf52izXJxjNc9PE"
+            width={868}
+            height={524}
           />
           <p>
             Neprocijenjiva vrijednost ulaganja: Zbog svega navedenog za vas je

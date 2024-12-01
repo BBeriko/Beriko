@@ -68,7 +68,7 @@ const dummyContent = [
       </div>
     ),
     badge: "28.10.2003.",
-    image: "https://utfs.io/f/KEu7z70yXtIhsg9ELXVaMQvp5O7boszN3y0qwneKCJF1RxLt",
+    image: "https://utfs.io/f/KEu7z70yXtIha1fux1pU504bLhlP2zDywtM8ORsS6cNBGKVI",
   },
   {
     title: "PRVI RAD",
@@ -86,7 +86,7 @@ const dummyContent = [
       </div>
     ),
     badge: "15.11.2003.",
-    image: "https://utfs.io/f/KEu7z70yXtIhE0q4OLb06MjBEZ1dtKrcDSCvHb3V97wqGpQx",
+    image: "https://utfs.io/f/KEu7z70yXtIhmr8yJpzdzSQAocj0Hm2iv8nBVl3OYwJtC4gX",
   },
   {
     title: "100. ZADOVOLJEN KUPAC",
@@ -100,7 +100,7 @@ const dummyContent = [
       </p>
     ),
     badge: "03.06.2007.",
-    image: "https://utfs.io/f/KEu7z70yXtIhrFb7tdwOwqK19xHGP8diYUVcFpthZRS7LT6J",
+    image: "https://utfs.io/f/KEu7z70yXtIhcZglMSoPSUYDu1N3BZKXtMmd4xhaHczEe7yn",
   },
   {
     title: "DANAS",
@@ -116,6 +116,6 @@ const dummyContent = [
       </div>
     ),
     image:
-      "https://utfs.io/f/KEu7z70yXtIhuYqNWY9EPsNeCHgB6kQVKIf5XSocj18zuhqO",
+      "https://utfs.io/f/KEu7z70yXtIhKSzqswv0yXtIh7G5ljWY38NgizvsLonBkbCM",
   },
 ];

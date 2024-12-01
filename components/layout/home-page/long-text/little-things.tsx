@@ -55,10 +55,10 @@ export default function LittleThings() {
           </p>
           <Image
             className="w-[700px] h-[300px] mx-auto"
-            alt="hazzard"
-            src="https://utfs.io/f/KEu7z70yXtIhqO81cgIy8mSBnw36iXAZMdtf97DWFEHhbI2J"
-            width={1920}
-            height={300}
+            alt="little-things"
+            src="https://utfs.io/f/KEu7z70yXtIhzaWxcLEolDUQiGWJVfjA1P5OaRFIrg7eMps8"
+            width={600}
+            height={171}
           />
           <p>
             <span className="font-bold">Nema kapanja kondenzata</span> po automobilu i stvarima: Sloj filca uprešan

@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { supabase } from "@/utils/supabase/client";
 import { Session } from "@supabase/supabase-js";
-import { useRouter } from "next/navigation";
+
 import { useEffect, useState } from "react";
 
 export default function CreateReview() {

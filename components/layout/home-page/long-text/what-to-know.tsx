@@ -17,10 +17,10 @@ export default function WhatToKnow() {
           </p>
           <Image
             className="w-[700px] h-[300px] mx-auto"
-            src="https://utfs.io/f/KEu7z70yXtIhKmU5Iz0yXtIh7G5ljWY38NgizvsLonBkbCMJ"
-            alt="ice"
-            width={1920}
-            height={300}
+            src="https://utfs.io/f/KEu7z70yXtIh3RmgX4FnC74XyQiNOgsDkISZpJxU6cWHRz1q"
+            alt="what-to-know1"
+            width={600}
+            height={196}
           />
           <div className="flex flex-col gap-6">
             <p>
@@ -55,10 +55,10 @@ export default function WhatToKnow() {
           </div>
           <Image
             className="w-[400px] h-[300px] mx-auto"
-            src="https://utfs.io/f/KEu7z70yXtIhTfqojAvGVc2OLDv3EXmZF6oq1hapjNdnwlT0"
-            alt="ice"
-            width={1920}
-            height={300}
+            src="https://utfs.io/f/KEu7z70yXtIhEPZSxGb06MjBEZ1dtKrcDSCvHb3V97wqGpQx"
+            alt="what-to-know2"
+            width={600}
+            height={450}
           />
           <p>
             <span className="font-bold">Zaštita:</span> U izradi se koristi

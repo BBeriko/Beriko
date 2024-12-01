@@ -32,14 +32,14 @@ input:focus {
 }
 
 .contact-hero-section-bg {
-  background-image: url("https://utfs.io/f/KEu7z70yXtIh6sBI2yzUNH8ZyG9Qf4jFVOJtYKzh0nc2aeM7");
+  background-image: url("https://utfs.io/f/KEu7z70yXtIhuJUJhQ9EPsNeCHgB6kQVKIf5XSocj18zuhqO");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 @media(max-width: 1000px) {
   .contact-hero-section-bg {
-    background-image: url("https://utfs.io/f/KEu7z70yXtIh6sBI2yzUNH8ZyG9Qf4jFVOJtYKzh0nc2aeM7");
+    background-image: url("https://utfs.io/f/KEu7z70yXtIhuJUJhQ9EPsNeCHgB6kQVKIf5XSocj18zuhqO");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -54,7 +54,7 @@ input:focus {
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://utfs.io/f/KEu7z70yXtIhWH6cnWLFc2DBTKOSMgPJpEiu0VqrwCnexbN9");
+    url("https://utfs.io/f/KEu7z70yXtIhSm7IKcptzPDtOFnukIaQfR15387hgsTxBVYo");
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -64,7 +64,7 @@ input:focus {
 
 .products-hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://utfs.io/f/KEu7z70yXtIhdhOdaW7vHulxycoSbwMR0QphBZeTN8ALatjO");
+    url("https://utfs.io/f/KEu7z70yXtIhCicLhimiocmuLekfQE7gZ18FWYVq0CNUld6j");
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;

@@ -38,10 +38,10 @@ export default function Hazzard() {
             </p>
             <Image
               className="w-[300px] h-[300px] mx-auto md:mx-0"
-              alt="hazzard"
-              src="https://utfs.io/f/KEu7z70yXtIhQx9TrbeCj5sfX0ZqmwURzxAkFrOicTn48Dbv"
-              width={1920}
-              height={300}
+              alt="snow-storm"
+              src="https://utfs.io/f/KEu7z70yXtIh0zO1AAJCJ9zKXRBioqfEP2bWSY0U6v31u78j"
+              width={700}
+              height={700}
             />
           </div>
           <div className="flex flex-col md:flex-row-reverse gap-4">
@@ -60,9 +60,9 @@ export default function Hazzard() {
             <Image
               className="w-[300px] h-[300px] mx-auto md:mx-0"
               alt="damaged-car"
-              src="https://utfs.io/f/KEu7z70yXtIhc1M7YbeoPSUYDu1N3BZKXtMmd4xhaHczEe7y"
-              width={1920}
-              height={300}
+              src="https://utfs.io/f/KEu7z70yXtIhmJn38PdzSQAocj0Hm2iv8nBVl3OYwJtC4gXI"
+              width={800}
+              height={800}
             />
           </div>
           <div className="flex flex-col md:flex-row gap-4">
@@ -80,9 +80,9 @@ export default function Hazzard() {
             <Image
               className="w-[250px] h-[400px] md:w-[300px] md:h-[300px] mx-auto md:mx-0"
               alt="stop"
-              src="https://utfs.io/f/KEu7z70yXtIhOocjC9jUh3rcWXTD7PRVmnIlsUZKtJobYuHp"
-              width={1920}
-              height={300}
+              src="https://utfs.io/f/KEu7z70yXtIhu2BilS9EPsNeCHgB6kQVKIf5XSocj18zuhqO"
+              width={514}
+              height={918}
             />
           </div>
           <div className="flex flex-col md:flex-row-reverse gap-4">
@@ -103,9 +103,9 @@ export default function Hazzard() {
             <Image
               className="w-[400px] h-[300px] mx-auto md:mx-0"
               alt="ice"
-              src="https://utfs.io/f/KEu7z70yXtIhHNhp8wSlTeKSurl5Qjp9wJyd83EiVLzN1oqF"
-              width={1920}
-              height={300}
+              src="https://utfs.io/f/KEu7z70yXtIhHh3A3tlTeKSurl5Qjp9wJyd83EiVLzN1oqFv"
+              width={640}
+              height={428}
             />
           </div>
         </div>

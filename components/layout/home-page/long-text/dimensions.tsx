@@ -24,10 +24,10 @@ export default function Dimensions() {
             </div>
             <Image
               className="w-[300px] h-[75px] mx-auto"
-              src="https://utfs.io/f/KEu7z70yXtIh8k4eWbySeWkuAlRcKazbEojGsgDmyxPMd9n7"
-              alt="ice"
-              width={1920}
-              height={300}
+              src="https://utfs.io/f/KEu7z70yXtIhY9dIByWB92uSbVDkXG4T5O3UqyLe1fWlH7Ez"
+              alt="potpis"
+              width={1000}
+              height={900}
             />
           </div>
           <div className="flex flex-col gap-4 mt-8">
