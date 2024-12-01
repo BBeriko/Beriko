@@ -1,23 +1,13 @@
 "use client";
 
-import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { FaFacebookF } from "react-icons/fa6";
 import { IoLogoInstagram } from "react-icons/io5";
 
 export default function Footer() {
-  const pathname = usePathname();
-
   return (
-    <footer
-      className={cn(
-        pathname === "/login" || pathname == "/contact"
-          ? "text-sm overflow-y-auto bottom-0 left-0 text-newWhite py-12 bg-gradient-to-b from-primary/60 to-primary pt-12 sm:pt-36"
-          : "text-sm overflow-y-auto bottom-0 left-0 text-newWhite py-12 bg-gradient-to-b from-primary/60 to-primary pt-[900px] sm:pt-36"
-      )}
-    >
+    <footer className="text-sm overflow-y-auto bottom-0 left-0 text-newWhite py-12 bg-gradient-to-b from-primary/60 to-primary pt-12 sm:pt-36">
       <div className="px-3 md:px-10 lg:px-24 space-y-12 md:space-y-24">
         <div className="space-y-12 md:space-y-0 flex flex-col md:flex-row md:space-x-24">
           <div className="space-y-6 min-w-[180px]">
