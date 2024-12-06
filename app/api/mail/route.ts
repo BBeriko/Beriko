@@ -25,8 +25,8 @@ export async function POST(req: Request) {
   `;
   
   const data = {
-    to: "same-mail",
-    from: "same-mail",
+    to: "beriko@beriko.com",
+    from: "beriko@beriko.com",
     subject: "Novi upit s web stranice",
     text: message,
     html: message.replace(/\r\n/g, "<br>"),
