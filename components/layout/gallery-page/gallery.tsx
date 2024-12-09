@@ -47,8 +47,12 @@ export default function Gallery() {
       .list("gallery/", { limit: 100, offset: 0 });
 
     if (data !== null) {
+      const sortedImages = data.sort(
+        (a, b) =>
+          new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
+      );
       // @ts-ignore
-      setImages(data);
+      setImages(sortedImages);
     } else {
       console.log(error);
     }
@@ -107,6 +111,15 @@ export default function Gallery() {
 
   return (
     <section className="py-12 sm:py-24 lg:py-10 px-3 md:px-10 lg:px-24">
+      <iframe
+        className="aspect-video rounded shadow-xl mb-16 w-full"
+        src="https://www.youtube.com/embed/8Y5rPDlEGAY?si=a-PXyXV49T_l1Nge"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
+      ></iframe>
       <div>
         <h1 className="text-center text-4xl font-semibold">Galerija</h1>
         <p className="text-center font-lg text-slate-400 mt-4 mb-10">

@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="flex items-center justify-center h-[35rem]">
         <div className="space-y-6 lg:pr-24 justify-center backdrop-blur-[3px] p-16 rounded-xl">
           <h1 className="2xl:text-6xl text-4xl sm:text-5xl font-semibold sm:min-w-[400px] max-w-[700px]">
-            Visoko Kvalitetni montažni objekti:hale, bungalovi, skladišta,
+            Visoko Kvalitetni montažni objekti: hale, bungalovi, skladišta,
             radionice i garaže
           </h1>
           <p className="max-w-[500px] lg:max-w-[700px]">

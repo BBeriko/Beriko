@@ -36,8 +36,10 @@ export default function UploadImage() {
   async function uploadImage(e: any) {
     let file = e.target.files[0];
 
-    if (file.size > 10 * 1024 * 1024) {
-      alert("Datoteka je veća od 10MB!");
+    if (file.size > 2 * 1024 * 1024) {
+      alert(
+        "Slika je veća od 2MB! Molimo smanjite veličinu slike ili promjenite format u WEBP radi što bolje optimizacije."
+      );
       return;
     }
 
@@ -68,10 +70,10 @@ export default function UploadImage() {
             onChange={(e) => uploadImage(e)}
             id="picture"
             type="file"
-            disabled={fileCount >= 40}
+            disabled={fileCount >= 60}
           />
-          {fileCount >= 40 && (
-            <p className="text-red-500">Ne možete dodati više od 40 slika.</p>
+          {fileCount >= 60 && (
+            <p className="text-red-500">Ne možete dodati više od 60 slika.</p>
           )}
         </div>
       </div>

@@ -1,10 +1,10 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Barcode, CreditCard, Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
 import { FiFacebook } from "react-icons/fi";
-import { IoLogoInstagram } from "react-icons/io5";
+import { IoIdCard, IoLogoInstagram } from "react-icons/io5";
 import { toast } from "sonner";
 
 export default function ContactForm() {
@@ -43,12 +43,33 @@ export default function ContactForm() {
             Kontakt informacije
           </h1>
         </div>
-        <div className="bg-primary flex-col text-white w-[90%] md:w-[50%] h-[21rem] relative z-10 shadow-md p-8 mx-auto left-0 right-0 top-24">
+        <div className="bg-primary flex-col text-white w-[90%] md:w-[50%] h-[23rem] relative z-10 shadow-md p-8 mx-auto left-0 right-0 top-24">
           <h2 className="text-2xl text-center font-semibold">Kontakt Info</h2>
           <div className="mt-6 space-y-4">
             <div className="flex items-center md:items-top">
               <MapPin className="mr-6 w-9 h-9 sm:w-4 sm:h-4" />
               <p>HR-48362 KLOŠTAR PODRAVSKI, Sjepana Radića 2</p>
+            </div>
+            <div className="flex gap-1">
+              <div className="flex items-center gap-6">
+                <IoIdCard />
+                <p>OIB:</p>
+              </div>
+              <p>4735 4554 801</p>
+            </div>
+            <div className="flex gap-1">
+              <div className="flex items-center gap-6">
+                <Barcode className="w-4 h-4" />
+                <p>SWIFT/BIC:</p>
+              </div>
+              <p>ESBCHR22</p>
+            </div>
+            <div className="flex gap-1">
+              <div className="flex items-center gap-6">
+                <CreditCard className="w-4 h-4" />
+                <p>IBAN:</p>
+              </div>
+              <p>HR63 240 2006 1100 9532 59</p>
             </div>
             <div className="flex items-center">
               <Mail className="mr-6 w-4 h-4" />
@@ -59,7 +80,7 @@ export default function ContactForm() {
               <p>+385 98 64 62 60</p>
             </div>
           </div>
-          <div className="flex justify-center mt-8 space-x-4">
+          <div className="flex justify-center mt-2 lg:mt-8 space-x-4">
             <Link
               href="https://www.facebook.com/profile.php?id=61556832431837"
               className="rounded-md p-4 bg-newWhite text-newBlack hover:opacity-75 duration-300"

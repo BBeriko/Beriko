@@ -42,8 +42,12 @@ export default function FirstProducts() {
       .list("products/", { limit: 100, offset: 0 });
 
     if (data !== null) {
+      const sortedImages = data.sort(
+        (a, b) =>
+          new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
+      );
       // @ts-ignore
-      setImages(data);
+      setImages(sortedImages);
     } else {
       console.log(error);
     }
