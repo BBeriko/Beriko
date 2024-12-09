@@ -118,7 +118,7 @@ export default function FirstProducts() {
                 alt={image.name}
                 width={500}
                 height={100}
-                className="h-full shadow-xl rounded-t"
+                className="w-full block shadow-xl rounded-t"
               />
               <div className="flex justify-between">
                 <p className="bg-[color:var(--analogous)] p-4 w-16 text-center text-white rounded-b">
