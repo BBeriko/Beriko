@@ -27,9 +27,9 @@ export default function Secret() {
           <Image
             className="w-[400px] h-[300px] mx-auto"
             alt="secret"
-            src="https://utfs.io/f/KEu7z70yXtIhet1HJwkbMstZeRInBA1hYyf52izXJxjNc9PE"
-            width={868}
-            height={524}
+            src="https://utfs.io/f/KEu7z70yXtIhrUzb4jwOwqK19xHGP8diYUVcFpthZRS7LT6J"
+            width={733}
+            height={550}
           />
           <p>
             Neprocijenjiva vrijednost ulaganja: Zbog svega navedenog za vas je

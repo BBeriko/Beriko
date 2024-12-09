@@ -54,11 +54,11 @@ export default function LittleThings() {
             montiranje u priobalju i na otocima.
           </p>
           <Image
-            className="w-[700px] h-[300px] mx-auto"
+            className="w-[500px] h-[300px] mx-auto"
             alt="little-things"
-            src="https://utfs.io/f/KEu7z70yXtIhzaWxcLEolDUQiGWJVfjA1P5OaRFIrg7eMps8"
-            width={600}
-            height={171}
+            src="https://utfs.io/f/KEu7z70yXtIhWvR1SYlLFc2DBTKOSMgPJpEiu0VqrwCnexbN"
+            width={1229}
+            height={753}
           />
           <p>
             <span className="font-bold">Nema kapanja kondenzata</span> po automobilu i stvarima: Sloj filca uprešan

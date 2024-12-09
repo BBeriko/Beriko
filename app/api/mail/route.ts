@@ -1,7 +1,7 @@
-import { NextResponse } from 'next/server';
-import mail from '@sendgrid/mail';
+import { NextResponse } from "next/server";
+import mail from "@sendgrid/mail";
 
-mail.setApiKey(process.env.SENDGRID_API_KEY || '');
+mail.setApiKey(process.env.SENDGRID_API_KEY || "");
 
 export async function POST(req: Request) {
   const body = await req.json();
@@ -23,20 +23,30 @@ export async function POST(req: Request) {
     <strong>Boja zidova:</strong> ${body.boja_zidova}<br>
     <strong>Poruka:</strong> ${body.poruka}
   `;
-  
+
   const data = {
     to: "beriko@beriko.com",
     from: "beriko@beriko.com",
     subject: "Novi upit s web stranice",
     text: message,
     html: message.replace(/\r\n/g, "<br>"),
+    mailSettings: {
+      trackingSettings: {
+        clickTracking: { enable: false },
+        openTracking: { enable: false },
+      },
+    },
   };
 
   try {
+    // @ts-ignore
     await mail.send(data);
-    return NextResponse.json({ status: 'ok' }, { status: 200 });
+    return NextResponse.json({ status: "ok" }, { status: 200 });
   } catch (error) {
     console.error(error);
-    return NextResponse.json({ error: 'Failed to send email' }, { status: 500 });
+    return NextResponse.json(
+      { error: "Failed to send email" },
+      { status: 500 }
+    );
   }
 }

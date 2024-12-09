@@ -14,8 +14,8 @@ export default function Dimensions() {
           <div className="flex flex-col md:flex-row items-center">
             <div className="flex flex-col gap-4">
               <p>
-                Visina (m) od 2 do 4 <br /> Širina (m) od 3 do 8 <br /> Dužina
-                (m) od 5 do 20
+                Visina (m) od 2 do 5 <br /> Širina (m) od 3 do 10 <br /> Dužina
+                (m) od 5 do 40
               </p>
               <p>Zamislite dan s dovoljno prostora za život......</p>
               <p>S poštovanjem,</p>

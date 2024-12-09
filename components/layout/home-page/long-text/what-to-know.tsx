@@ -17,7 +17,7 @@ export default function WhatToKnow() {
           </p>
           <Image
             className="w-[700px] h-[300px] mx-auto"
-            src="https://utfs.io/f/KEu7z70yXtIh3RmgX4FnC74XyQiNOgsDkISZpJxU6cWHRz1q"
+            src="https://utfs.io/f/KEu7z70yXtIhwkHpmJ82iYR5oPAsZLqjv7Q1TmNwH8hB4OkE"
             alt="what-to-know1"
             width={600}
             height={196}
@@ -55,10 +55,10 @@ export default function WhatToKnow() {
           </div>
           <Image
             className="w-[400px] h-[300px] mx-auto"
-            src="https://utfs.io/f/KEu7z70yXtIhEPZSxGb06MjBEZ1dtKrcDSCvHb3V97wqGpQx"
+            src="https://utfs.io/f/KEu7z70yXtIhCpgMwlmiocmuLekfQE7gZ18FWYVq0CNUld6j"
             alt="what-to-know2"
-            width={600}
-            height={450}
+            width={814}
+            height={590}
           />
           <p>
             <span className="font-bold">Zaštita:</span> U izradi se koristi
