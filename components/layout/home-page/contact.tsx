@@ -280,9 +280,6 @@ export default function ContactForm() {
                     >
                       <option value="Bijela">Bijela</option>
                       <option value="Crvena">Crvena</option>
-                      <option value="Imitacija crijepa">
-                        Imitacija crijepa
-                      </option>
                     </select>
                   </div>
                   <div className="flex flex-col flex-1">
