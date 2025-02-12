@@ -77,7 +77,7 @@ export default function ContactForm() {
             </div>
             <div className="flex items-center">
               <Phone className="mr-6 w-4 h-4" />
-              <p>+385 98 64 62 60</p>
+              <p>098 64 62 60</p>
             </div>
           </div>
           <div className="flex justify-center mt-2 lg:mt-8 space-x-4">

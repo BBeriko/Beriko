@@ -67,7 +67,7 @@ const dummyContent = [
         </p>
       </div>
     ),
-    badge: "28.10.2003.",
+    badge: "01.03.2003.",
     image: "https://utfs.io/f/KEu7z70yXtIha1fux1pU504bLhlP2zDywtM8ORsS6cNBGKVI",
   },
   {

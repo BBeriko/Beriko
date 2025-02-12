@@ -13,7 +13,7 @@ export default function ContactInfo() {
           <div className="text-black bg-primary/20 w-full md:w-[30%] lg:w-[25%] flex flex-col justify-center  gap-y-5 items-center p-20 rounded-sm shadow-xl ">
             <Phone className="m-auto w-12 h-12" />
             <p className="font-bold text-3xl">Telefon</p>
-            <p className="texts-sm font-semibold">+385 97 644 5543</p>
+            <p className="texts-sm font-semibold whitespace-nowrap">098 64 62 60</p>
           </div>
 
           <div className="text-black bg-primary/20 w-full  md:w-[35%] lg:w-[25%]  flex flex-col justify-center gap-y-5 items-center py-20 px-10 rounded-sm shadow-xl ">
@@ -38,7 +38,7 @@ export default function ContactInfo() {
             <Mail className="m-auto h-12 w-12" />
             <p className="font-bold text-3xl">Email</p>
             <p className="font-semibold">
-              <Link href="mailto:beriko@gmail.com">beriko@gmail.com</Link>
+              <Link href="mailto:beriko@gmail.com">beriko@beriko.com</Link>
             </p>
           </div>
         </div>
