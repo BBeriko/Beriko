@@ -11,7 +11,7 @@ export default function Hero() {
             radionice i garaže
           </h1>
           <p className="max-w-[500px] lg:max-w-[700px]">
-            Beriko d.o.o specijalizira se u izradi visokokvalitetnih montažnih
+            Beriko d.o.o. specijaliziran je u izradi visokokvalitetnih montažnih
             objekata. Naše inovativne dizajne i trajni materijali osiguravaju
             dugotrajnu izdržljivost i zadovoljstvo kupaca.
           </p>

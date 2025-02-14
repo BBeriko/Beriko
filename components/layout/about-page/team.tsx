@@ -10,11 +10,11 @@ export default function Team() {
       <hr className="w-40 h-2 mx-auto mt-5 mb-16 bg-primary border-0 rounded   " />
       <div className="flex items-top">
         <Image
-          src="https://utfs.io/f/KEu7z70yXtIhcgUMbRoPSUYDu1N3BZKXtMmd4xhaHczEe7yn"
+          src="https://utfs.io/f/KEu7z70yXtIhvQzHAwjJxWbVZTG1QNpgn35lr4MtwjOmvPk6"
           alt="director"
-          width={821}
-          height={793}
-          className="w-[500px]"
+          width={1079}
+          height={1762}
+          className="w-[300px]"
         />
         <div className="ml-10">
           <h1 className="text-4xl font-semibold">Bernard Domović</h1>
