@@ -24,12 +24,35 @@ export async function POST(req: Request) {
     <strong>Poruka:</strong> ${body.poruka}
   `;
 
-  const data = {
+  // Email sent to your work email
+  const dataToYou = {
     to: "beriko@beriko.com",
     from: "beriko@beriko.com",
     subject: "Novi upit s web stranice",
-    text: message,
-    html: message.replace(/\r\n/g, "<br>"),
+    text: message.replace(/<[^>]+>/g, ""),
+    html: message,
+    mailSettings: {
+      trackingSettings: {
+        clickTracking: { enable: false },
+        openTracking: { enable: false },
+      },
+    },
+  };
+
+  // Confirmation email sent back to the user
+  const confirmationEmail = {
+    to: body.email,
+    from: {
+      email: "beriko@beriko.com",
+      name: "Beriko",
+    },
+    replyTo: "beriko@beriko.com",
+    subject: "Potvrda primitka vašeg upita",
+    text: `Poštovani/a ${body.ime},\n\nZaprimili smo vaš upit te ćemo vam odgovoriti u najkraćem mogućem roku.\n\nSrdačan pozdrav,\nBeriko`,
+    html: `
+      <p>Poštovani/a ${body.ime},</p>
+      <p>Zaprimili smo vaš upit te ćemo vam odgovoriti u najkraćem mogućem roku.</p>
+      <p>Srdačan pozdrav,<br/>Beriko</p>`,
     mailSettings: {
       trackingSettings: {
         clickTracking: { enable: false },
@@ -40,7 +63,11 @@ export async function POST(req: Request) {
 
   try {
     // @ts-ignore
-    await mail.send(data);
+    await mail.send(dataToYou);
+
+    // @ts-ignore
+    await mail.send(confirmationEmail);
+
     return NextResponse.json({ status: "ok" }, { status: 200 });
   } catch (error) {
     console.error(error);
