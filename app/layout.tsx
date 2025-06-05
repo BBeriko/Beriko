@@ -14,6 +14,29 @@ export const metadata: Metadata = {
     "Beriko - Montažni Objekti, hale, bungalovi, skladišta. radionice i garaže",
   description:
     "Beriko - Stručnjaci za izradu montažnih objekata. Nudimo visokokvalitetna, prilagodljiva i izdržljiva rješenja za montažne objekte i garažna vrata, uz izvrsnu uslugu i zadovoljstvo klijenata. Otkrijte inovativne i dugotrajne proizvode koji ispunjavaju vaše potrebe.",
+  keywords: [
+    "Montažni objekti",
+    "Hale",
+    "Bungalovi",
+    "Skladišta",
+    "Radionice",
+    "Garaže",
+    "Kućice za pse",
+  ],
+  creator: "Beriko",
+  authors: [{ name: "Beriko" }],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  metadataBase: new URL("https://www.beriko.com"),
+  openGraph: {
+    images: ["opengraph-image.png"],
+  },
 };
 
 export default function RootLayout({

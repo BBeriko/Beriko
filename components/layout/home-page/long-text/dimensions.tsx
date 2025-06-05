@@ -62,7 +62,7 @@ export default function Dimensions() {
             <p className="ml-9">Proizvod možete platiti po isporuci, što će Vas zaštititi od eventualnih zlouporaba. Vaši osobni podaci će biti potpuno sigurni!</p>
           </div>
           <Link className="mx-auto" href="#contact">
-            <Button className="text-2xl py-8 px-12 mt-6 text-white">POŠTALJITE UPIT</Button>
+            <Button className="text-2xl py-8 px-12 mt-6 text-white">POŠALJITE UPIT</Button>
           </Link>
         </div>
       </div>
