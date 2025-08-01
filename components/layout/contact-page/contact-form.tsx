@@ -21,7 +21,9 @@ export default function ContactForm() {
   async function handleOnSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
-    const formData = new FormData(e.currentTarget);
+    const form = e.currentTarget;
+
+    const formData = new FormData(form);
     const data: Record<string, string> = {};
 
     formData.forEach((value, key) => {
@@ -41,8 +43,14 @@ export default function ContactForm() {
         throw new Error("Network response was not ok");
       }
 
-      toast.success("Email uspješno poslan!");
-      e.currentTarget.reset();
+      const result = await response.json();
+
+      if (result.status === "ok") {
+        toast.success("Email uspješno poslan!");
+        form.reset(); // Use the stored form reference
+      } else {
+        throw new Error("Unexpected response status");
+      }
     } catch (error) {
       toast.error("Došlo je do pogreške pri slanju emaila.");
     } finally {
