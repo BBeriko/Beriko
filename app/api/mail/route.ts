@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
-import mail from "@sendgrid/mail";
+import { Resend } from "resend";
 
-mail.setApiKey(process.env.SENDGRID_API_KEY || "");
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
   const body = await req.json();
@@ -24,49 +24,25 @@ export async function POST(req: Request) {
     <strong>Poruka:</strong> ${body.poruka}
   `;
 
-  // Email sent to your work email
-  const dataToYou = {
-    to: "beriko@beriko.com",
-    from: "beriko@beriko.com",
-    subject: "Novi upit s web stranice",
-    text: message.replace(/<[^>]+>/g, ""),
-    html: message,
-    mailSettings: {
-      trackingSettings: {
-        clickTracking: { enable: false },
-        openTracking: { enable: false },
-      },
-    },
-  };
-
-  // Confirmation email sent back to the user
-  const confirmationEmail = {
-    to: body.email,
-    from: {
-      email: "beriko@beriko.com",
-      name: "Beriko",
-    },
-    replyTo: "beriko@beriko.com",
-    subject: "Potvrda primitka vašeg upita",
-    text: `Poštovani/a ${body.ime},\n\nZaprimili smo vaš upit te ćemo vam odgovoriti u najkraćem mogućem roku.\n\nSrdačan pozdrav,\nBeriko`,
-    html: `
-      <p>Poštovani/a ${body.ime},</p>
-      <p>Zaprimili smo vaš upit te ćemo vam odgovoriti u najkraćem mogućem roku.</p>
-      <p>Srdačan pozdrav,<br/>Beriko</p>`,
-    mailSettings: {
-      trackingSettings: {
-        clickTracking: { enable: false },
-        openTracking: { enable: false },
-      },
-    },
-  };
-
   try {
-    // @ts-ignore
-    await mail.send(dataToYou);
+    // Email sent to your work email
+    await resend.emails.send({
+      from: "beriko@beriko.com",
+      to: "beriko@beriko.com",
+      subject: "Novi upit s web stranice",
+      html: message,
+    });
 
-    // @ts-ignore
-    await mail.send(confirmationEmail);
+    // Confirmation email sent back to the user
+    await resend.emails.send({
+      from: "Beriko <beriko@beriko.com>",
+      to: body.email,
+      subject: "Potvrda primitka vašeg upita",
+      html: `
+        <p>Poštovani/a ${body.ime},</p>
+        <p>Zaprimili smo vaš upit te ćemo vam odgovoriti u najkraćem mogućem roku.</p>
+        <p>Srdačan pozdrav,<br/>Beriko</p>`,
+    });
 
     return NextResponse.json({ status: "ok" }, { status: 200 });
   } catch (error) {
