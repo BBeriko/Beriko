@@ -1,13 +1,23 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Barcode, CreditCard, Mail, MapPin, Phone } from "lucide-react";
+import {
+  Barcode,
+  CreditCard,
+  Loader2Icon,
+  Mail,
+  MapPin,
+  Phone,
+} from "lucide-react";
 import Link from "next/link";
+import { useState } from "react";
 import { FiFacebook } from "react-icons/fi";
 import { IoIdCard, IoLogoInstagram } from "react-icons/io5";
 import { toast } from "sonner";
 
 export default function ContactForm() {
+  const [loading, setLoading] = useState(false);
+
   async function handleOnSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
@@ -18,20 +28,25 @@ export default function ContactForm() {
       data[key] = value.toString();
     });
 
+    setLoading(true);
+
     try {
       const response = await fetch("/api/mail", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
-  
+
       if (!response.ok) {
-        throw new Error('Network response was not ok');
+        throw new Error("Network response was not ok");
       }
-  
+
       toast.success("Email uspješno poslan!");
+      e.currentTarget.reset();
     } catch (error) {
       toast.error("Došlo je do pogreške pri slanju emaila.");
+    } finally {
+      setLoading(false);
     }
   }
 
@@ -299,8 +314,19 @@ export default function ContactForm() {
                 name="message"
                 className="resize-none border-b border-newBlack py-2 mt-12 mr-8 h-32 w-full"
               ></textarea>
-              <Button type="submit" className="flex p-6 w-36 ml-auto mt-12">
-                Pošalji
+              <Button
+                type="submit"
+                className="flex p-6 w-36 ml-auto mt-12"
+                disabled={loading}
+              >
+                {loading ? (
+                  <div className="flex items-center gap-2">
+                    <Loader2Icon className="animate-spin" />
+                    <span>Šaljem...</span>
+                  </div>
+                ) : (
+                  "Pošalji"
+                )}
               </Button>
             </form>
           </div>
